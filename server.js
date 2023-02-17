@@ -10,17 +10,18 @@ app.get('/', (req, res) =>{
   res.sendFile(process.cwd() + '/views/index.html');
 });
 
-const mySecret = process.env['secret1'];
-
-app.use(function(req, res, next) {
+/*app.use(function(req, res, next) {
   res.status(404)
     .type('text')
     .send('Not Found');
-});
+});*/
 
 const PORT = process.env.PORT || 3000;
+
 app.listen(PORT, () =>{
-  console.log('listening on port' + PORT);
+  err 
+    ? console.log("Error in server setup") 
+    : console.log('listening on port' + PORT);
 });
 
-module.exports = app;
+//module.exports = app;
