@@ -1,0 +1,31 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: linen;
+    padding: 20px;
+    border: 2px solid rgb(154, 46, 46);
+}
+
+img {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+h1 {
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 1px rgb(154, 46, 46);
+}
+
+p,
+li {
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.8;
+}
