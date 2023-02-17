@@ -20,8 +20,8 @@ const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, (err) =>{
   err 
-    ? console.log("Error in server setup") 
-    : console.log('listening on port' + PORT);
+    ? console.log('Error in server setup') 
+    : console.log('Listening on port ' + PORT);
 });
 
 //module.exports = app;
