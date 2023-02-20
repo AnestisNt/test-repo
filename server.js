@@ -19,9 +19,9 @@ app.get('/', (req, res) =>{
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, (err) =>{
-  err 
-    ? console.log('Error in server setup') 
-    : console.log('Listening on port ' + PORT);
+  err
+  ? console.log('Server did not start')
+  : console.log('Listening on port ' + PORT);
 });
 
 //module.exports = app;
