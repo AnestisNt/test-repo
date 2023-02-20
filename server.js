@@ -20,8 +20,8 @@ const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, (err) =>{
   err
-  ? console.log('Server did not start')
-  : console.log('Listening on port ' + PORT);
+    ? console.log('Server did not start')
+    : console.log('Listening on port ' + PORT);
 });
 
 //module.exports = app;
