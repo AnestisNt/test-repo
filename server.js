@@ -10,11 +10,11 @@ app.get('/', (req, res) =>{
   res.sendFile(process.cwd() + '/index.html');
 });
 
-/*app.use(function(req, res, next) {
+app.use(function(req, res, next) {
   res.status(404)
     .type('text')
     .send('Not Found');
-});*/
+});
 
 const PORT = process.env.PORT || 3000;
 
