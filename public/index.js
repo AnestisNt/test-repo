@@ -1,9 +1,30 @@
 const h1 = document.querySelector('h1');
-const button1 = document.getElementById('button1');
+const button1 = document.getElementById('change-user');
 
-button1.addEventListener('click', () =>{
-  h1.textContent = 'sup dawg';
-});
+function setUserName(){
+  const myName = prompt('Please enter your name');
+  
+  if(!myName){
+    setUserName();
+  }
+  else{
+    localStorage.setItem('name', myName);
+    h1.textContent = `New slime! ${myName}`;
+  }
+
+}
+
+const storedName = localStorage.getItem('name');
+
+!storedName
+  ? setUserName()
+  : h1.textContent =`Welcome back slime! ${storedName}`;
+
+
+button1.onclick = () =>{
+  setUserName();
+}
+
 
 const myImage = document.querySelector('img');
 
