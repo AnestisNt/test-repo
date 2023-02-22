@@ -7,7 +7,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/public', express.static(process.cwd() + '/public'));
 
 app.get('/', (req, res) =>{
-  res.sendFile(process.cwd() + '/views/index.html');
+  res.sendFile(process.cwd() + '/index.html');
 });
 
 /*app.use(function(req, res, next) {
