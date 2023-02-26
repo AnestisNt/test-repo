@@ -4,11 +4,11 @@ body {
   padding: 20px;
   border: 2px solid rgb(154, 46, 46);
   margin: 0;
+  font-size: calc(0.6rem + 1vw);
 }
 
 img {
-  width: 200px;
-  display: block;
+  width: calc(100px + 30vw);
 }
 
 h1,
