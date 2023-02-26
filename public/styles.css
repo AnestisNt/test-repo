@@ -10,11 +10,30 @@ img {
   width: calc(100px + 30vw);
 }
 
+aside {
+  column-count: 2;
+}
+
+dl {
+  break-inside: avoid;
+  margin: 0;
+}
+
+ul {
+  list-style-image: linear-gradient(to left bottom, #a52222, #2e2ebd);
+  position: relative;
+  top: 25%;
+  border: 1px solid;
+  background: white;
+  max-width: 20vw;
+}
+
 h1,
 dt,
-sup{
+sup {
   letter-spacing: 5px;
   text-shadow: 2px 2px 1px rgb(154, 46, 46);
+  line-height: 1.6;
 }
 
 p {
