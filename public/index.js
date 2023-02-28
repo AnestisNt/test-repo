@@ -18,7 +18,7 @@ const storedName = localStorage.getItem('name');
 
 !storedName
   ? setUserName()
-  : h1.textContent =`Welcome back slime! ${storedName}`;
+  : h1.textContent = `Welcome back slime! ${storedName}`;
 
 
 button1.onclick = () =>{
