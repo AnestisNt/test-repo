@@ -1,7 +1,6 @@
 body {
   background-color: linen;
   padding: 20px;
-  margin: 0;
   font: calc(0.6rem + 1vw) 'Open Sans', sans-serif;
 }
 
@@ -12,6 +11,15 @@ img {
 
 aside {
   column-count: 2;
+}
+
+li:last-child::after {
+  content: " New!";
+  color: red;
+}
+
+a::after {
+  content: " (" attr(href) ")";
 }
 
 dl {
