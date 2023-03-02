@@ -1,7 +1,11 @@
-body {
-  background-color: linen;
-  padding: 20px;
-  font: calc(0.6rem + 1vw) 'Open Sans', sans-serif;
+@import url("styles2.css") screen and (orientation: landscape);
+
+@layer {
+  body {
+    background: linen;*/
+    padding: 20px;
+    font: calc(0.6rem + 1vw) 'Open Sans', sans-serif;
+  }
 }
 
 img {
@@ -38,12 +42,14 @@ ul::first-line {
   font-weight: bold;
 }
 
-h1,
-dt,
-sup {
-  letter-spacing: 5px;
-  text-shadow: 2px 2px 1px rgb(134, 86, 86);
-  line-height: 1.6;
+@layer {
+  h1,
+  dt,
+  sup {
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 1px rgb(134, 86, 86);
+    line-height: 1.6;
+  }
 }
 
 h2 + p {
