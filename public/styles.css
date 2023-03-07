@@ -1,21 +1,21 @@
 @import "styles2.css" screen and (orientation: landscape);
 
 @layer {
-    body {
+  body {
     background-color: linen;
     padding: 20px;
-    font: calc(0.6rem + 1vw) 'Open Sans', sans-serif;
+    font: calc(.6rem + .4vw) 'Open Sans', sans-serif;
   }
 }
 
 img {
   width: 200px;
-  width: calc(100px + 30vw);
+  width: calc(120px + 15vw);
 }
 
 aside {
   column-count: 2;
-  margin-top: 30px;
+  margin: 40px auto;
 }
 
 li:last-child::after {
@@ -26,6 +26,11 @@ li:last-child::after {
 dl {
   break-inside: avoid;
   margin: 0;
+  writing-mode: vertical-lr;
+}
+
+dl:hover {
+  writing-mode: horizontal-tb;
 }
 
 ul {
@@ -34,12 +39,16 @@ ul {
   top: 25%;
   border: 1px solid;
   background: white;
-  max-width: 20vw;
+  max-width: 120px;
   transform: rotate(0.9turn);
 }
 
+li {
+  font-size: 60%;
+}
+
 ul::first-line {
-  font-weight: bold;
+  background: #c4b5b5;
 }
 
 @layer {
