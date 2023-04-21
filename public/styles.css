@@ -4,7 +4,7 @@
   body {
     background-color: linen;
     padding: 20px;
-    font: calc(.6rem + .4vw) 'Open Sans', sans-serif;
+    font: calc(.6rem + .4vw) /*'Open Sans'*/, sans-serif;
   }
 }
 
@@ -34,7 +34,7 @@ dl:hover {
 }
 
 ul {
-  list-style-image: linear-gradient(to left bottom, #a52222, #2e2ebd);
+  list-style: square linear-gradient(to left bottom, #a52222, #2e2ebd);
   position: relative;
   top: 25%;
   border: 1px solid;
@@ -52,7 +52,7 @@ ul::first-line {
 }
 
 @layer {
-  h1,
+  .js-header1,
   dt,
   sup {
     letter-spacing: 5px;
@@ -70,7 +70,8 @@ a::after {
   content: " (" attr(href) ")";
 }
 
-a:hover {
+a:hover,
+a:focus {
   opacity: 0.8;
   text-decoration: none;
 }

@@ -4,12 +4,12 @@ body {
   margin: 0;
 }
 
-h1 {
+.js-header1 {
   border-top: 1px solid;
   display: inline;
 }
 
-h1,
+.js-header1,
 dt,
 sup {
   text-shadow: none;

@@ -1,4 +1,4 @@
-const h1 = document.querySelector('h1');
+const h1 = document.querySelector('.js-header1');
 const button1 = document.getElementById('change-user');
 
 function setUserName(){
@@ -20,11 +20,9 @@ const storedName = localStorage.getItem('name');
   ? setUserName()
   : h1.textContent = `Welcome back slime! ${storedName}`;
 
-
 button1.onclick = () =>{
   setUserName();
 }
-
 
 const myImage = document.querySelector('img');
 

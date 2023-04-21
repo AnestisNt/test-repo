@@ -10,6 +10,50 @@
     <link 
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" 
       rel="stylesheet">
+    <link 
+      href='https://fonts.googleapis.com/css?family=Alfa+Slab+One' 
+      rel='stylesheet'>
+    
+    <style>
+       .shadow {
+         font-family: 'Alfa Slab One', cursive;
+       	 color: lightcoral;
+         font-size: 150%;
+       	 text-shadow: 1px 1px 2px rgba(0,0,0,0.7),
+       	              5px 5px 1px orange,
+       	              6px 6px 2px rgba(0,0,0,0.7),
+       	              10px 10px 1px red,
+       	              11px 11px 2px rgba(0,0,0,0.7),
+       	              15px 15px 1px purple,
+       	              16px 16px 2px rgba(0,0,0,0.7);
+       	 animation: text-snake 1s 1s;      
+
+       }
+       
+      @keyframes text-snake {
+
+         from {
+         	text-shadow: 1px 1px 2px rgba(0,0,0,0.7),
+       	              5px 5px 1px orange,
+       	              6px 6px 2px rgba(0,0,0,0.7),
+       	              10px 10px 1px red,
+       	              11px 11px 2px rgba(0,0,0,0.7),
+       	              15px 15px 1px purple,
+       	              16px 16px 2px rgba(0,0,0,0.7);
+         }
+         to {
+         	text-shadow: -1px 1px 2px rgba(0,0,0,0.7),
+       	              -5px 5px 1px orange,
+       	              -6px 6px 2px rgba(0,0,0,0.7),
+       	              -10px 10px 1px red,
+       	              -11px 11px 2px rgba(0,0,0,0.7),
+       	              -15px 15px 1px purple,
+       	              -16px 16px 2px rgba(0,0,0,0.7);
+         }
+       }
+
+  </style>
+  
   </head>
   
   <body> 
@@ -18,12 +62,12 @@
       alt="a field full of flowers">
     
     <header>
-      <h1><samp></samp></h1>
+      <h1 class="js-header1"><samp></samp></h1>
     </header>
     
     <main>
       <article>
-        <h2>SUPP SLIMELORD</h2>
+        <h2 class="shadow">SUPP SLIMELORD</h2>
         <p>The date is the 23<sup>rd</sup> of february</p>
         <p class="arrow_box"></p>
       </article>
@@ -56,7 +100,8 @@
       <p>Here is a link of <abbr>MDN</abbr> also known as Mozilla Developer Network
         <a 
           href="https://developer.mozilla.org/en-US/" 
-          target="_blank">MDN Web Docs</a>
+          target="_blank">MDN Web Docs
+        </a>
       </p>
       <div>
         <button id="change-user">change user</button>
