@@ -34,3 +34,4 @@ myImage.onclick = () =>{
     : myImage.setAttribute('src', "./public/images/image1.jpg");
 
 };
+
